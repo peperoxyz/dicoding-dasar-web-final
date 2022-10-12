@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  margin-top: -1rem;
 }
 
 .box-icon {
@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  border-radius: 7px;
+  /* border-radius: 7px; */
 }
 
 .box-icon i {
@@ -32,12 +32,16 @@
 
 /* desktop nav */
 .desktop-nav-container {
-  max-width: 90%;
+  max-width: 1440px;
   margin: 0 auto;
   display: none;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  margin-top: -1rem;
+}
+
+.logo {
+  margin-top: 30px;
 }
 
 .nav ul {
@@ -47,6 +51,7 @@
 .nav ul li {
   list-style: none;
   margin: 0 1rem;
+  margin-top: 30px;
 }
 
 a {
@@ -62,6 +67,36 @@ a {
   padding: 1rem;
 }
 
+/* box start */
+.box-start {
+  width: 25rem;
+  height: 3.5rem;
+  background-color: #ffe9ec;
+  /* opacity: 0.19; */
+  margin-top: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.box-start i {
+  color: #ff4d4d;
+}
+
+.start {
+  font-size: 13px;
+  color: #ff4d4d;
+}
+
+.alert {
+  background-color: white;
+  font-size: 13px;
+  padding: 7px 20px;
+  color: red;
+}
+
 .hero {
   display: flex;
   flex-direction: column-reverse;
@@ -69,32 +104,69 @@ a {
   /* border: 1px solid red; */
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 1400px;
 }
 
 .hero-img {
-  /* display: none; */
+  display: none;
   inset: 0;
 }
 
 .hero-img img {
   border-radius: 30px;
+  /* display: none; */
 }
 
 .hero-txt {
 }
 
 .hero-txt h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.05;
   /* width: 60%; */
+  margin-top: 1.5rem;
 }
 
 .hero-txt p {
-  font-size: 1.5rem;
+  width: 340px;
+  font-size: 1rem;
   /* border: 1px solid red; */
   margin-top: -1.5rem;
+}
+
+/* company logos */
+.logo-container {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.trusted {
+  margin-left: 1.4rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: grey;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  overflow: hidden;
+}
+
+.company-logos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cgv {
+  margin-top: -1rem;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -117,5 +189,36 @@ a {
   .hero-txt {
     font-size: 10rem;
     order: 1;
+  }
+
+  .company-logos img {
+    /* width: 280px; */
+  }
+
+  .company-logos {
+    gap: 3rem;
+    margin-top: -30px;
+  }
+
+  .xxi {
+    width: 280px;
+  }
+
+  .cgv {
+    width: 280px;
+  }
+
+  .cinemax {
+    width: 220px;
+  }
+
+  .cinepolis {
+    margin-top: 1.5rem;
+    width: 220px;
+  }
+
+  .trusted {
+    font-size: 1.6rem;
+    margin-left: 3.8rem;
   }
 }
