@@ -117,9 +117,6 @@ a {
   /* display: none; */
 }
 
-.hero-txt {
-}
-
 .hero-txt h1 {
   font-size: 4.5rem;
   font-weight: 600;
@@ -129,10 +126,10 @@ a {
 }
 
 .hero-txt p {
-  width: 340px;
-  font-size: 1rem;
+  width: 65%;
+  font-size: 1.2rem;
   /* border: 1px solid red; */
-  margin-top: -1.5rem;
+  margin-top: -3.5rem;
 }
 
 /* company logos */
@@ -172,7 +169,7 @@ a {
 
 /* about section */
 .about-container {
-  max-width: 1444px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 1rem;
   margin-top: 2rem;
@@ -181,7 +178,8 @@ a {
   gap: 1rem;
 }
 
-.about-container h1 {
+.about-container .how-container,
+h1 {
   font-size: 3rem;
   font-weight: 400;
   margin-top: 1rem;
@@ -189,7 +187,7 @@ a {
 
 .about-container p {
   color: grey;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 1.5;
   margin-top: -2rem;
@@ -201,6 +199,69 @@ a {
   height: 430px;
   border-radius: 26px;
   object-fit: cover;
+}
+
+/* how */
+.how-container {
+  max-width: 1550px;
+  margin: 0 auto;
+  /* padding: 1rem; */
+  margin-top: 2rem;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.how-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.how-container .line-1 {
+  background-color: #ecf2ff;
+  overflow: hidden;
+  align-self: end;
+  width: 500px;
+  height: 170px;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.step-1,
+.step-2,
+.step-4,
+.step-3 {
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #6b85c6;
+}
+
+.pack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pack span {
+  color: black;
+  font-size: 1rem;
+}
+
+.how-container .line-2 {
+  background-color: #ecf2ff;
+  overflow: hidden;
+  align-self: start;
+  width: 500px;
+  height: 170px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -220,9 +281,19 @@ a {
   .hero-img {
     display: flex;
   }
+
   .hero-txt {
     font-size: 10rem;
     order: 1;
+  }
+
+  .hero-txt h1 {
+    width: 800px;
+  }
+
+  .hero-txt p {
+    width: 420px;
+    font-size: 1.2rem;
   }
 
   .company-logos img {
@@ -263,8 +334,18 @@ a {
     width: 1400px;
   }
 
+  .about-container p {
+    width: 90%;
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+
   .about-img img {
     width: 700px;
     height: 380px;
+  }
+
+  .how-box {
+    display: none;
   }
 }
