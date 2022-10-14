@@ -102,7 +102,7 @@ a {
   flex-direction: column-reverse;
   gap: 3rem;
   /* border: 1px solid red; */
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 1400px;
 }
@@ -130,23 +130,24 @@ a {
   font-size: 1.2rem;
   /* border: 1px solid red; */
   margin-top: -3.5rem;
+  color: #121212;
 }
 
 /* company logos */
 .logo-container {
-  max-width: 1550px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  border: solid 2px red;
+  /* border: solid 2px red; */
 }
 
 .trusted {
   margin-left: 1.4rem;
   font-size: 1.2rem;
   margin-top: 2rem;
-  color: grey;
+  color: #121212;
 }
 
 .company-logos {
@@ -186,7 +187,7 @@ h1 {
 }
 
 .about-container p {
-  color: grey;
+  color: #121212;
   font-size: 25px;
   font-weight: 300;
   line-height: 1.5;
@@ -203,7 +204,7 @@ h1 {
 
 /* how */
 .how-container {
-  max-width: 1550px;
+  max-width: 1440px;
   margin: 0 auto;
   /* padding: 1rem; */
   margin-top: 2rem;
@@ -228,6 +229,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  padding: 24px 40px;
 }
 
 .step-1,
@@ -249,8 +251,8 @@ h1 {
 }
 
 .pack span {
-  color: black;
-  font-size: 1rem;
+  color: #121212;
+  font-size: 22px;
 }
 
 .how-container .line-2 {
@@ -262,6 +264,26 @@ h1 {
   border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: center;
+  padding: 24px 40px;
+}
+
+.me {
+  position: relative;
+  border: 1px solid red;
+}
+
+.myself > img {
+  margin: 20px 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.myself-desktop {
+  display: none;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -288,12 +310,13 @@ h1 {
   }
 
   .hero-txt h1 {
-    width: 800px;
+    width: 80%;
   }
 
   .hero-txt p {
     width: 420px;
     font-size: 1.2rem;
+    color: #121212;
   }
 
   .company-logos img {
@@ -347,5 +370,26 @@ h1 {
 
   .how-box {
     display: none;
+  }
+
+  aside,
+  .myself {
+    display: none;
+  }
+
+  .me {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .myself-desktop {
+    display: flex;
+  }
+
+  .myself-desktop > img {
+    margin: 20px 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 37px;
   }
 }
